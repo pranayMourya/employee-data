@@ -1,0 +1,136 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  /* box-sizing: border-box; */
+}
+
+.datacard {
+  background-color: #2873c4;
+  padding: 1rem;
+  color: rgb(255, 255, 255);
+  width: 18rem;
+  min-height: 8rem;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  /* disable text selection */
+  -webkit-user-select: none; /* Safari */
+  -ms-user-select: none; /* IE 10 and IE 11 */
+  user-select: none; /* Standard syntax */
+}
+
+.info-box {
+  padding-bottom: 1rem;
+}
+
+.card-container {
+  display: flex;
+  flex-wrap: wrap;
+  grid-gap: 1rem;
+  padding: 1rem;
+}
+.header {
+  background-color: rgb(237, 245, 255);
+  color: rgb(15, 15, 15) !important;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+}
+.header-button {
+  background-color: #1a1a1a; /* Green */
+  border: none;
+  color: white;
+  padding: 13px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  border-radius: 20rem;
+}
+.header-button:hover {
+  background-color: RoyalBlue;
+}
+.card-button {
+  padding: 4px 10px;
+  border: 1px solid rgb(14, 14, 14);
+  background-color: rgba(255, 255, 255, 0);
+  color: rgb(14, 14, 14);
+  font-size: 10px;
+  cursor: pointer;
+  border-radius: 20rem;
+}
+.card-button:hover {
+  background-color: rgb(14, 14, 14);
+  color: rgb(255, 255, 255);
+}
+.datacard-content {
+  margin-bottom: 1.5rem;
+}
+.datacard-footer {
+  display: flex;
+  justify-content: end;
+  grid-gap: 0.5rem;
+}
+
+/* Slider styles */
+.slider {
+  -webkit-appearance: none;
+  width: 100%;
+  height: 0.4rem;
+  background: #ff761b;
+  outline: none;
+  -webkit-transition: .2s;
+  transition: opacity .2s;
+}
+
+.slider::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 1.2rem;
+  height: 1.2rem;
+  border-radius: 50%;
+  background: #ff761b;
+  border: 1px solid #22548c;
+  cursor: pointer;
+}
+
+.slider::-moz-range-thumb {
+  width: 1.2rem;
+  height: 1.2rem;
+  border-radius: 50%;
+  background: #ff761b;
+  border: 1px solid #22548c;
+  cursor: pointer;
+}
+
+/* input styles */
+.edit-input {
+  border: none;
+  width: 100%;
+  padding: .1rem .2rem;
+  background: transparent;
+  color: #fff;
+}
+.edit-input:focus-visible {
+  outline: none;
+  border: 1px solid #ffffff78;
+  border-radius: 0.2rem;
+}
+.edit-input:disabled {
+  color: #fff;
+}
+.name-input {
+  font-size: 1.2rem;
+}
+
+/* draggable style */
+.move-button {
+  cursor: move;
+}
+
+#addCardInputContainer {
+  padding: 1rem;
+  background-color: #00000017;
+}

@@ -1,0 +1,68 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Deloitte Assignment</title>
+    <link rel="stylesheet" href="style.css" />
+    <style>
+      /* hr {
+        border: 1px solid #c9c9c9;
+        width: 97%;
+        margin: 20px auto;
+      } */
+    </style>
+  </head>
+  <body>
+    <div class="header">
+      <h2>Employee Detail Cards</h2>
+      <div>
+        <button
+          id="addCard"
+          type="button"
+          class="header-button"
+          onclick="document.getElementById('addCardInputContainer').style.display = 'block'"
+        >
+          Add Cards
+        </button>
+      </div>
+    </div>
+
+    <div id="addCardInputContainer" style="display: none;">
+      <form onsubmit="addDataCard(event)">
+        <div style="display: flex; grid-gap: 1rem;">
+          <div>
+            <label for="emp-name">Name:</label>
+            <div>
+              <input required type="text" id="emp-name" name="name"><br><br>
+            </div>
+          </div>
+          <div>
+            <label for="emp-designation">Designation:</label>
+            <div>
+              <input aria-required="true" required type="text" id="emp-designation" name="designation"><br><br>
+            </div>
+          </div>
+        </div>
+        <div style="margin-bottom: 1rem">
+          <label for="emp-designation">Salay range (0 to 100):</label>
+          <input
+          name="salary-range"
+          value="0"
+          style="margin-top: 0.5rem;"
+          class="slider"
+          type="range"
+          min="0"
+          max="100"
+          step="5"
+          />
+      </div>
+        <button onclick="cancelAdd(event)" class="card-button">Cancel</button>
+        <input class="card-button" type="submit" value="Submit">
+      </form>
+    </div>
+
+    <div id="drag-container" class="card-container">
+    </div>
+    <script src="./script.js" ></script>
+  </body>
+</html>

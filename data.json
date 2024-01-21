@@ -1,0 +1,17 @@
+[
+    {
+       "name": "Name 1",
+       "designation": "Designation 1",
+       "salaryRange": "30"
+    },
+    {
+       "name": "Name 2",
+       "designation": "Designation 2",
+       "salaryRange": "30"
+    },
+    {
+       "name": "Name 3",
+       "designation": "Designation 3",
+       "salaryRange": "30"
+    }
+ ]
